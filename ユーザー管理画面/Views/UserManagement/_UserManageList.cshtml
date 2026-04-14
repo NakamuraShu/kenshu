@@ -1,0 +1,163 @@
+﻿@{
+    Layout = null;
+}
+
+@model ユーザー管理画面.Models.UserManagementModel
+@using ユーザー管理画面.Models
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_UserManageList</title>
+</head>
+<body>
+    <div>
+        <div style="text-align: right; margin-bottom: 10px;">
+            @if (Model != null && Model.表示区分 == "3")
+            {
+                <input type="button" class="Button btn回復" name="回復" id="btn回復" value="回復" style="width: 60px;">
+                <input type="button" class="Button btn削除" name="削除" id="btn削除" value="削除" style="width: 60px; background-color: gray;" disabled="disabled">
+            }
+            else if (Model != null && Model.表示区分 == "2")
+            {
+                <input type="button" class="Button btn回復" name="回復" id="btn回復" value="回復" style="width: 60px; background-color: gray;" disabled="disabled">
+                <input type="button" class="Button btn削除" name="削除" id="btn削除" value="削除" style="width: 60px;">
+            }
+            else
+            {
+                <input type="button" class="Button btn回復" name="回復" id="btn回復" value="回復" style="width: 60px; background-color: gray;" disabled="disabled">
+                <input type="button" class="Button btn削除" name="削除" id="btn削除" value="削除" style="width: 60px; background-color: gray;" disabled="disabled">
+            }
+        </div>
+        <table style="border: 2px solid #69A4D8; width: 100%;" id="検索結果">
+            <tr style="border-bottom: 2px solid #69A4D8; height: 40px;">
+                <td colspan="7" style="width: auto; border-right: none">
+                    <text>総件数：</text>
+                    <span id="lbl総件数">@(Model != null ? Model.検索結果.Count : 0)</span>
+                    <text>件</text>
+                </td>
+                <td style="font-weight: bold; width: auto; text-align: right; font-weight: normal; border: none;">
+                    表示件数：
+                </td>
+                <td style="border: none">
+                    <select class="Select" id="cbx表示件数" name="表示件数" style="width: 130px; float: right;">
+                        <option value="0" @(Model != null && Model.表示件数 == 0 ? "selected" : "")>すべて</option>
+                        <option value="5" @(Model != null && Model.表示件数 == 5 ? "selected" : "")>5件</option>
+                        <option value="10" @(Model != null && Model.表示件数 == 10 ? "selected" : "")>10件</option>
+                        <option value="20" @(Model != null && Model.表示件数 == 20 ? "selected" : "")>20件</option>
+                        <option value="50" @(Model != null && Model.表示件数 == 50 ? "selected" : "")>50件</option>
+                        <option value="100" @(Model != null && Model.表示件数 == 100 ? "selected" : "")>100件</option>
+                    </select>
+                </td>
+            </tr>
+            <tr style="height: 50px; border-bottom: 3px solid #5B9BD5;">
+                <td style="text-align: center; width: 40px">選択</td>
+                <td style="text-align: center; width: 60px" onclick="sort(this)" id="txt氏名">
+                    氏名<br />
+                    <span>@(Model != null && Model.ソート列 == "氏名" ? Model.ソート順 : "")</span>
+                </td>
+                <td style="text-align: center; width: 40px;" onclick="sort(this)">
+                    性別<br />
+                    <span>@(Model != null && Model.ソート列 == "性別" ? Model.ソート順 : "")</span>
+                </td>
+                <td style="text-align: center; width: 75px" onclick="sort(this)">
+                    生年月日<br />
+                    <span>@(Model != null && Model.ソート列 == "生年月日" ? Model.ソート順 : "")</span>
+                </td>
+                <td style="text-align: center; width: 100px" onclick="sort(this)">
+                    電話番号<br />
+                    <span>@(Model != null && Model.ソート列 == "電話番号" ? Model.ソート順 : "")</span>
+                </td>
+                <td style="text-align: center; width: 150px" onclick="sort(this)">
+                    メール<br />
+                    <span>@(Model != null && Model.ソート列 == "メール" ? Model.ソート順 : "")</span>
+                </td>
+                <td style="text-align: center; width: 50px" onclick="sort(this)">
+                    住所<br />
+                    <span>@(Model != null && Model.ソート列 == "住所" ? Model.ソート順 : "")</span>
+                </td>
+                <td style="text-align: center; width: 80px" onclick="sort(this)">
+                    所属<br />
+                    <span>@(Model != null && Model.ソート列 == "所属" ? Model.ソート順 : "")</span>
+                </td>
+                <td style="text-align: center; width: 130px" onclick="sort(this)">
+                    役職<br />
+                    <span>@(Model != null && Model.ソート列 == "役職" ? Model.ソート順 : "")</span>
+                </td>
+            </tr>
+
+            @if (Model != null && Model.表示一覧 != null)
+            {
+                foreach (UserManageRowModel row in Model.表示一覧)
+                {
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="chkユーザー選択@(row.ユーザーID)" name="選択一覧" value="@(row.ユーザーID)" />
+                        </td>
+                        <td>@row.氏名</td>
+                        @if (row.性別 == "1")
+                        {
+                            <td>男</td>
+                        }
+                        else if (row.性別 == "2")
+                        {
+                            <td>女</td>
+                        }
+                        <td>@row.生年月日</td>
+                        <td>@row.電話番号</td>
+                        <td>@row.メール</td>
+                        <td>@row.住所</td>
+                        <td>@row.所属</td>
+                        <td>@row.役職</td>
+                    </tr>
+                }
+            }
+
+
+            @if (Model != null && Model.表示一覧 != null && Model.表示一覧.Count < Model.検索結果.Count)
+            {
+                <tr style="border-bottom: 2px solid #69A4D8;" id="tb改ページ">
+                    <td colspan="8" style="border: none;"></td>
+                    <td style="border: none; display: block; float: right;">
+
+                        @if (Model.表示件数 != 0)
+                        {
+                            if (Model.現ページ == 1)
+                            {
+                                <input type="image" src="/Images/left_triangle_disable.png" id="btn前ページ" style="float: left; width: 30px; margin: 2px;" />
+                            }
+                            else
+                            {
+                                <input type="image" src="/Images/left_triangle.png" id="btn前ページ" style="float: left; width: 30px; margin: 2px;" />
+                            }
+
+                            <select id="cbx現ページ" name="現ページ" style="width: 50px; margin-bottom: 5px">
+                                @{
+                                    int maxPage = (Model.検索結果.Count % Model.表示件数 == 0)
+                                        ? (Model.検索結果.Count / Model.表示件数)
+                                        : (Model.検索結果.Count / Model.表示件数 + 1);
+                                }
+                                @for (int i = 1; i <= maxPage; i++)
+                                {
+                                    <option value="@(i)" @(i == Model.現ページ ? "selected" : "")>@(i)</option>
+                                }
+                            </select>
+
+                            if (Model.現ページ == maxPage)
+                            {
+                                <input type="image" src="/Images/right_triangle_disable.png" id="btn次ページ" style="float: right; width: 30px; margin: 2px;" />
+                            }
+                            else
+                            {
+                                <input type="image" src="/Images/right_triangle.png" id="btn次ページ" style="float: right; width: 30px; margin: 2px;" />
+                            }
+                        }
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

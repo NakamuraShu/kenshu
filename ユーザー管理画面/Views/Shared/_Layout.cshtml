@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+}
+
+@using ユーザー管理画面.Models
+@model UserManagementModel
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="expires" content="-1" />
+    ```
+
+    これを行うことで、2重に `
+    <html>
+    ` や `
+    <head>
+        ` が読み込まれるエラーがなくなり、下の方で読み込んでいるjQuery（`
+        <script src="~/Scripts/jquery-1.10.2.min.js" ...`）が正常に動くようになります。
+                ---
+                ### 💡 追記：コントローラーを拝見して気づいた点
+                コントローラーのコードも共有いただきありがとうございます！非常に分かりやすいです。
+                初期表示（`Index`）でエラーになっていた理由がより明確になりました。
+                初期表示の `Index` メソッドで、以下のようになっていますね。
+                ```csharp
+                UserManageModel.表示区分="新規申請 " ;
