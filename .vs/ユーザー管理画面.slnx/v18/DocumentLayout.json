@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48CB6196-997E-41AF-BECB-AB18734C8B60}|\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762.csproj|C:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\models\\usermanagementmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48CB6196-997E-41AF-BECB-AB18734C8B60}|\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762.csproj|C:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48CB6196-997E-41AF-BECB-AB18734C8B60}|\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762.csproj|solutionrelative:\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48CB6196-997E-41AF-BECB-AB18734C8B60}|\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762.csproj|c:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\models\\usermanagementmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48CB6196-997E-41AF-BECB-AB18734C8B60}|\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762.csproj|solutionrelative:\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\models\\usermanagementmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,12 +19,8 @@
       "RelativeMoniker": "D:0:0:{48CB6196-997E-41AF-BECB-AB18734C8B60}|\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762.csproj|solutionrelative:\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\views\\usermanagement\\_usermanagelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48CB6196-997E-41AF-BECB-AB18734C8B60}|\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762.csproj|c:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\views\\usermanagement\\usermanage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{48CB6196-997E-41AF-BECB-AB18734C8B60}|\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762.csproj|C:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\views\\usermanagement\\usermanage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{48CB6196-997E-41AF-BECB-AB18734C8B60}|\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762.csproj|solutionrelative:\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\views\\usermanagement\\usermanage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48CB6196-997E-41AF-BECB-AB18734C8B60}|\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762.csproj|C:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48CB6196-997E-41AF-BECB-AB18734C8B60}|\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762.csproj|solutionrelative:\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48CB6196-997E-41AF-BECB-AB18734C8B60}|\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762.csproj|C:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\models\\usermanageconditionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,7 +77,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -105,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UserManage.cshtml",
               "DocumentMoniker": "C:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Views\\UserManagement\\UserManage.cshtml",
               "RelativeDocumentMoniker": "\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Views\\UserManagement\\UserManage.cshtml",
@@ -113,25 +113,24 @@
               "RelativeToolTip": "\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Views\\UserManagement\\UserManage.cshtml",
               "ViewState": "AgIAADgDAAAAAAAAAAAuwE4DAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-14T00:45:26.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-14T00:45:26.62Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserManagementModel.cs",
               "DocumentMoniker": "C:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Models\\UserManagementModel.cs",
               "RelativeDocumentMoniker": "\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Models\\UserManagementModel.cs",
               "ToolTip": "C:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Models\\UserManagementModel.cs",
               "RelativeToolTip": "\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Models\\UserManagementModel.cs",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAzwMMAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAzwJkAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-10T02:43:56.138Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "_UserManageList.cshtml",
               "DocumentMoniker": "C:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Views\\UserManagement\\_UserManageList.cshtml",
               "RelativeDocumentMoniker": "\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Views\\UserManagement\\_UserManageList.cshtml",
@@ -139,18 +138,17 @@
               "RelativeToolTip": "\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Views\\UserManagement\\_UserManageList.cshtml",
               "ViewState": "AgIAAEkAAAAAAAAAAAAiwFsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-10T05:39:59.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-10T05:39:59.372Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "UserManagementController.cs",
               "DocumentMoniker": "C:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Controllers\\UserManagementController.cs",
               "RelativeDocumentMoniker": "\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Controllers\\UserManagementController.cs",
-              "ToolTip": "C:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Controllers\\UserManagementController.cs",
-              "RelativeToolTip": "\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Controllers\\UserManagementController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA==",
+              "ToolTip": "C:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Controllers\\UserManagementController.cs*",
+              "RelativeToolTip": "\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Controllers\\UserManagementController.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-10T02:43:56.355Z",
               "EditorCaption": ""
@@ -169,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserManageRowModel.cs",
               "DocumentMoniker": "C:\\\u7814\u4FEE\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Models\\UserManageRowModel.cs",
               "RelativeDocumentMoniker": "\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Models\\UserManageRowModel.cs",
@@ -177,8 +175,7 @@
               "RelativeToolTip": "\u30E6\u30FC\u30B6\u30FC\u7BA1\u7406\u753B\u9762\\Models\\UserManageRowModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T04:30:47.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-13T04:30:47.843Z"
             },
             {
               "$type": "Document",

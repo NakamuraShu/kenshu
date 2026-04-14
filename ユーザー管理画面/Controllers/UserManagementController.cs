@@ -15,10 +15,6 @@ namespace ユーザー管理画面.Controllers
         {
             UserManagementModel UserManageModel = new UserManagementModel();
 
-            UserManageModel.表示件数 = 10;
-
-            UserManageModel.表示区分 = "新規申請 ";
-
             UserManageModel.List(condition);
 
             Session["UserSerch"] = UserManageModel;
@@ -75,7 +71,6 @@ namespace ユーザー管理画面.Controllers
             UserManageModel.選択一覧 = model.選択一覧;
 
             UserManageModel.DeleteUser(condition);
-            UserManageModel.List(condition);
 
             Session["UserSerch"] = UserManageModel;
             return PartialView("_UserManageList", UserManageModel);
@@ -88,7 +83,6 @@ namespace ユーザー管理画面.Controllers
             UserManageModel.選択一覧 = model.選択一覧;
 
             UserManageModel.InsertUser(condition);
-            UserManageModel.List(condition);
 
             Session["UserSerch"] = UserManageModel;
             return PartialView("_UserManageList", UserManageModel);
