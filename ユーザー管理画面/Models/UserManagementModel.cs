@@ -151,7 +151,7 @@ namespace ユーザー管理画面.Models
                 }
             }
 
-            string sql = "update user_master set type = 3 where user_id " + str + " ";
+            string sql = "update user_master set type = 2 where user_id " + str;
 
             MySqlConnection con = new MySqlConnection(
                 "server=localhost;port=3306;userid=csharp;password=csharp;" +
@@ -201,7 +201,7 @@ namespace ユーザー管理画面.Models
                 }
             }
 
-            string sql = "update user_master set type = 2 where user_id " + str + " ";
+            string sql = "update user_master set type = 2 where user_id " + str;
 
             MySqlConnection con = new MySqlConnection(
                 "server=localhost;port=3306;userid=csharp;password=csharp;" +

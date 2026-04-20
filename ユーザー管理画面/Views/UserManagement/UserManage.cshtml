@@ -534,14 +534,8 @@
     </div>
 
     <script type="text/javascript">
-        //AI解説を書いておきます
-        // --------------------------------------------------
-        // 1. 画面を開いた時の初期データ取得（コンボ技）
-        // --------------------------------------------------
         $(document).ready(function () {
             $("#cbx表示区分").val("0");
-
-            // ① まず Find で C# に「登録済(2)だよ！」とサーバーの検索条件を更新させる
             $.ajax({
                 type: "post",
                 url: "/UserManagement/Find",
@@ -552,7 +546,6 @@
                 }),
                 contentType: 'application/json',
                 success: function () {
-                    // ② Findの更新が終わったら、すかさず GetPage で表のデータを取ってくる！
                     $.ajax({
                         type: "post",
                         url: "/UserManagement/GetPage",
@@ -562,7 +555,6 @@
                         }),
                         contentType: 'application/json',
                         success: function (pageData) {
-                            // 最終的な画面の更新は GetPage の結果を使う
                             $("#divユーザーの一覧").html(pageData);
 
                             if ($("#検索結果").length > 0) {
@@ -577,16 +569,12 @@
             });
         });
 
-        // --------------------------------------------------
-        // 2. 表示区分が変更されたときの処理（コンボ技）
-        // --------------------------------------------------
         $(document).on('change', '#cbx表示区分', function (event) {
             event.preventDefault();
 
-            var selectedKbn = $(this).val(); // 選ばれた表示区分
+            var selectedKbn = $(this).val();
             var rowCount = $("#cbx表示件数").val() || 10;
 
-            // ① まず Find で新しい検索条件をサーバーに伝える
             $.ajax({
                 type: "post",
                 url: "/UserManagement/Find",
@@ -597,7 +585,6 @@
                 }),
                 contentType: 'application/json',
                 success: function () {
-                    // ② 伝え終わったら、すかさず GetPage で新しい表をもらう！
                     $.ajax({
                         type: "post",
                         url: "/UserManagement/GetPage",
@@ -621,13 +608,8 @@
             });
         });
 
-        // --------------------------------------------------
-        // 3. 以下の処理（表示件数、ページネーション、ボタン類、ソート）は既存のまま
-        // --------------------------------------------------
-
-        $(document).on('change', "[id ='cbx表示件数']", function (event) { // event追加
+        $(document).on('change', "[id ='cbx表示件数']", function (event) { 
             event.preventDefault();
-            // ShowLoading();
             $.ajax({
                 type: "post",
                 url: "/UserManagement/GetPage",
@@ -638,20 +620,16 @@
                 }),
                 contentType: 'application/json',
                 success: function (data) {
-                    // HideLoading();
                     $("#divユーザーの一覧").html(data);
                     $("#divユーザーの一覧").height($("#検索結果").height());
                 },
                 error: function (xhr, status, error) {
-                    // HideLoading();
-                    // ShowErrMsg(xhr.responseText);
                 }
             });
         });
 
-        $(document).on('change', "[id^='cbx現ページ']", function (event) { // event追加
+        $(document).on('change', "[id^='cbx現ページ']", function (event) { 
             event.preventDefault();
-            // ShowLoading();
             if ($('#lbl総件数').text() == "0") {
                 return;
             }
@@ -665,18 +643,15 @@
                 }),
                 contentType: 'application/json',
                 success: function (data) {
-                    // HideLoading();
                     $("#divユーザーの一覧").html(data);
                     $("#divユーザーの一覧").height($("#検索結果").height());
                 },
                 error: function (xhr, status, error) {
-                    // HideLoading();
-                    // ShowErrMsg(xhr.responseText);
                 }
             });
         });
 
-        $(document).on('click', "[id ='btn前ページ']", function (event) { // event追加
+        $(document).on('click', "[id ='btn前ページ']", function (event) { 
             event.preventDefault();
             var selecting = $('#cbx現ページ').val();
 
@@ -686,7 +661,6 @@
 
             $('#cbx現ページ').val(Number(selecting) - 1);
             $('#btn次ページ').attr("src", "/Images/right_triangle.png");
-            // ShowLoading();
             $.ajax({
                 type: "post",
                 url: "/UserManagement/GetPage",
@@ -696,18 +670,15 @@
                 }),
                 contentType: 'application/json',
                 success: function (data) {
-                    // HideLoading();
                     $("#divユーザーの一覧").html(data);
                     $("#divユーザーの一覧").height($("#検索結果").height());
                 },
                 error: function (xhr, status, error) {
-                    // HideLoading();
-                    // ShowErrMsg(xhr.responseText);
                 }
             });
         });
 
-        $(document).on('click', "[id ='btn次ページ']", function (event) { // event追加
+        $(document).on('click', "[id ='btn次ページ']", function (event) { 
             event.preventDefault();
 
             var maxvalue = $('#cbx現ページ option:last-child').val();
@@ -719,7 +690,6 @@
 
             $('#cbx現ページ').val(Number(selecting) + 1);
             $('#btn前ページ').attr("src", "/Images/left_triangle.png");
-            // ShowLoading();
             $.ajax({
                 type: "post",
                 url: "/UserManagement/GetPage",
@@ -729,13 +699,10 @@
                 }),
                 contentType: 'application/json',
                 success: function (data) {
-                    // HideLoading();
                     $("#divユーザーの一覧").html(data);
                     $("#divユーザーの一覧").height($("#検索結果").height());
                 },
                 error: function (xhr, status, error) {
-                    // HideLoading();
-                    // ShowErrMsg(xhr.responseText);
                 }
             });
         });
@@ -762,7 +729,6 @@
                             $("#divユーザーの一覧").height($("#検索結果").height());
                         },
                         error: function () {
-                            alert("システムエラーが発生しました");
                         }
                     });
                 }
@@ -796,7 +762,6 @@
                             $("#divユーザーの一覧").height($("#検索結果").height());
                         },
                         error: function () {
-                            alert("システムエラーが発生しました");
                         }
                     });
                 }
@@ -836,8 +801,6 @@
                     $("#divユーザーの一覧").height($("#検索結果").height());
                 },
                 error: function (xhr, status, error) {
-                    // HideLoading();
-                    // ShowErrMsg(xhr.responseText);
                 }
             });
         };
